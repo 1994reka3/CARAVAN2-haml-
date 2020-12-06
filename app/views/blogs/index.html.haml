@@ -1,2 +1,173 @@
-%h1 Blogs#index
-%p Find me in app/views/blogs/index.html.haml
+%header
+  %h1.headline
+    %a{ href: "#" }
+      CARAVAN
+  .social
+    %i.fa.fa-facebook-square
+    %i.fa.fa fa-twitter-square
+    %i.fa.fa fa-instagram
+
+%nav
+  %ul.nav-list
+    %li.nav-list-item
+      %a{ href: "#" }
+        Home
+    %li.nav-list-item
+      %a{ href: "#" }
+        About
+    %li.nav-list-item
+      %a{ href: "#" }
+        Topic
+
+.main-visual
+  .main-visual-content
+    %p.main-visual-text
+      The world is a book
+      %br
+      and those who do not travel
+      %br
+      read only one page.
+    %p.main-visual-name
+      St.Augustine
+
+%main.clearfix
+  %section.blog
+    %h2.blog-headline
+      Recent Blogs
+    .blog-box
+      .blog-item.clearfix
+        = image_tag('img/forest.jpg',  class: 'blog-image')
+        %section.blog-text
+          %h3.blog-text-headline
+            %a{ href: "single.html" }
+              Hopeful lessons from
+              %br
+              the battle to save
+              %br
+              rainforests
+          %p.blog-date
+            June 19, 2017
+          %span.category
+            Nature
+      .blog-item.clearfix
+        =image_tag('img/desert.jpg', class: 'blog-image')
+        %section.blog-text
+          %h3.blog-text-headline
+            %a{ href: "single.html" }
+              How to fight
+              %br
+              desertification and
+              %br
+              reverse climate change
+          %p.blog-date
+            June 17, 2017
+          %span.category
+            Nature
+      .blog-item.clearfix
+        =image_tag('img/sunset.jpg', class: 'blog-image')
+        %section.blog-text
+          %h3.blog-text-headline
+            %a{ href: "single.html"}
+              Why I'm rowing
+              %br
+              across the Pacific
+          %p.blog-date
+            June 16, 2017
+          %span.category
+            Adventure
+      .blog-item.clearfix
+        =image_tag('img/italy.jpg', class: 'blog-image')
+        %section.blog-text
+          %h3.blog-text-headline
+            %a{ href: "single.html"}
+              Unseen footage,
+              %br
+              untamed nature
+          %p.blog-date
+            June 15, 2017
+          %span.category
+            Nature
+      .blog-item.clearfix
+        =image_tag('img/asia.jpg', class: 'blog-image')
+        %section.blog-text
+          %h3.blog-text-headline
+            %a{ href: "single.html"}
+              The case for,
+              %br
+              engineering our food
+          %p.blog-date
+            June 14, 2017
+          %span.category
+            Culture
+    .pagination
+      %p
+        <<
+      %p
+        <
+      %p
+        1
+      %p
+        2
+      %p
+        3
+      %p
+        >
+      %p
+        >>
+  .sidebar
+    %section.popular
+      %h2.sidebar-headline
+        Popular
+      .sidebar-contents
+        %p.popular-text
+          To solve old problems,
+          %br
+          study new species
+        %p.popular-text
+          Why Earth may someday
+          %br
+          look like Mars
+        %p.popular-text
+          What will humans look
+          %br
+          like in 100 years?
+        %p.popular-text
+          How to grow a forest
+          %br
+          in your backyard
+        %p.popular-text
+          How humans could evolve
+          %br
+          to survive in space
+    %section.instagram
+      %h2.instagram-headline
+        Instagram
+      .sidebar-contents.clearfix
+        .instagram-box
+        .instagram-box
+        .instagram-box
+        .instagram-box
+        .instagram-box
+        .instagram-box
+    %section.categories
+      %h2.categories-headline
+        Categories
+      .sidebar-contents
+        %p.categories-text
+          Technology(15)
+        %p.categories-text
+          Business(23)
+        %p.categories-text
+          Entertainment(12)
+        %p.categories-text
+          Nature(32)
+        %p.categories-text
+          Education(9)
+        %p.categories-text
+          Adventure(23)
+        %p.categories-text
+          Communication(14)
+
+%footer
+  %p.footer-text
+    © All rights reserved by Infratop.Inc.
