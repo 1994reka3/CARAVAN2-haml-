@@ -1,0 +1,120 @@
+%header
+  %h1.headline
+    %a{ href: "#" }
+      CARAVAN
+  .social
+    %i.fab.fa-facebook-square
+    %i.fab.fa-twitter-square
+    %i.fab.fa-instagram
+
+%nav
+  %ul.nav-list
+    %li.nav-list-item
+      %a{ href: "#" }
+        Home
+    %li.nav-list-item
+      %a{ href: "#" }
+        About
+    %li.nav-list-item
+      %a{ href: "#" }
+        Topic
+
+.main-visual
+  .main-visual-content
+    %p.main-visual-text
+      The world is a book
+      %br
+      and those who do not travel
+      %br
+      read only one page.
+    %p.main-visual-name
+      St.Augustine
+
+%main.clearfix
+  %section.blog
+    %h2.blog-headline
+      Recent Blogs
+    .blog-box
+      - @blogs.each do |blog|
+        .blog-item.clearfix
+          .blog-image
+            = image_tag('img/forest.jpg', class: 'blog-image')
+          %section.blog-text
+            %h3.blog-text-headline
+              = link_to blog.title, blog_path(blog)
+            %p.blog-date
+              = blog.created_at
+            %span.category
+              = blog.category
+    .pagination
+      %p
+        <<
+      %p
+        <
+      %p
+        1
+      %p
+        2
+      %p
+        3
+      %p
+        >
+      %p
+        >>
+  .sidebar
+    %section.popular
+      %h2.sidebar-headline
+        Popular
+      .sidebar-contents
+        %p.popular-text
+          To solve old problems,
+          %br
+          study new species
+        %p.popular-text
+          Why Earth may someday
+          %br
+          look like Mars
+        %p.popular-text
+          What will humans look
+          %br
+          like in 100 years?
+        %p.popular-text
+          How to grow a forest
+          %br
+          in your backyard
+        %p.popular-text
+          How humans could evolve
+          %br
+          to survive in space
+    %section.instagram
+      %h2.instagram-headline
+        Instagram
+      .sidebar-contents.clearfix
+        .instagram-box
+        .instagram-box
+        .instagram-box
+        .instagram-box
+        .instagram-box
+        .instagram-box
+    %section.categories
+      %h2.categories-headline
+        Categories
+      .sidebar-contents
+        %p.categories-text
+          Technology(15)
+        %p.categories-text
+          Business(23)
+        %p.categories-text
+          Entertainment(12)
+        %p.categories-text
+          Nature(32)
+        %p.categories-text
+          Education(9)
+        %p.categories-text
+          Adventure(23)
+        %p.categories-text
+          Communication(14)
+
+%footer
+  %p.footer-text
+    © All rights reserved by Infratop.Inc.
