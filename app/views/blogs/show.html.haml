@@ -45,8 +45,7 @@
     %p.single-text
       = @blog.body
     = link_to "編集", edit_blog_path(@blog)
-    %a{ href: "#" }
-      削除
+    = link_to "削除", blog_path(@blog), method: :delete
     .author-case.clearfix
       .author-image
       .author-box
